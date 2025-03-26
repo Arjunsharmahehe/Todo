@@ -8,9 +8,21 @@ export const fetchCatQuote = createAsyncThunk("quote/fetch", async () => {
   return data.fact;
 });
 
+interface QuoteState {
+    quote: string | null;
+    loading: boolean;
+    error: string | null;
+  }
+
+const initialState: QuoteState = {
+    quote: null,
+    loading: false,
+    error: null, // ✅ Define error as string | null
+  };
+
 const quoteSlice = createSlice({
   name: "quote",
-  initialState: { quote: "", loading: false, error: null },
+  initialState,
   reducers: {},
   extraReducers: (builder) => {
     builder
