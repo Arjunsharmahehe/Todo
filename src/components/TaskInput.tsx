@@ -18,7 +18,7 @@ export default function TaskInput() {
   };
 
   return (
-    <div className="flex gap-3 px-3 py-2 items-center w-5/6 sm:4/5 md:w-3/4 lg:w-1/2 border-2 border-neutral-800 rounded-md">
+    <div className="flex gap-3 px-3 py-2 flex-wrap items-center w-5/6 sm:4/5 md:w-3/4 lg:w-1/2 border-2 border-neutral-800 rounded-md">
       <input className="flex-1 px-4 py-2.5 pr-10text-white bg-neutral-800 border-2 border-neutral-800 rounded-md focus:outline-none focus:ring-2 focus:ring-neutral-500 focus:border-transparent transition-all duration-300 placeholder-gray-500"
         type="text"
         placeholder="Enter task..."
