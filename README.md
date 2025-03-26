@@ -3,7 +3,7 @@ This is just another implementation of a Todo list. It is made using React, next
 This project is made as an intership assignment
 
 ## Link
-This site is deployed using Vercel. [Link](todo-five-nu-50.vercel.app)
+This site is deployed using Vercel. [Link](https://todo-five-nu-50.vercel.app)
 
 ## Design
 Couldn't spend much time designing this website, so the design is minimal but not bad.
