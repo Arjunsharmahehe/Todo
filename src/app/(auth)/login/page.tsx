@@ -35,7 +35,7 @@ export default function Login() {
 
   return (
     <div className="flex flex-col justify-center items-center mt-7">
-        <div className="p-4 border-2 border-neutral-800 rounded-md max-w-96 flex gap-3 w-5/6 sm:4/5 md:w-3/4 lg:w-1/2">
+        <div className="p-4 border-2 border-neutral-800 rounded-md flex gap-3 w-fit sm:4/5 md:w-3/4 lg:w-1/2">
         <input className="flex-1 px-4 py-1 pr-10text-white bg-neutral-800 border-2 border-neutral-800 rounded-md focus:outline-none focus:ring-2 focus:ring-neutral-500 focus:border-transparent transition-all duration-300 placeholder-gray-500"
             type="text"
             placeholder="Username"
