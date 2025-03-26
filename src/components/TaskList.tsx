@@ -6,26 +6,7 @@ import { deleteTask } from "@/lib/tasksSlice";
 export default function TaskList() {
   const tasks = useAppSelector((state) => state.tasks.tasks);
   const dispatch = useAppDispatch();
-
-  const priorityStyles = {
-    high: {
-      background: 'bg-red-100 text-red-800',
-      border: 'border-red-300',
-      icon: 'text-red-500'
-    },
-    medium: {
-      background: 'bg-yellow-100 text-yellow-800',
-      border: 'border-yellow-300',
-      icon: 'text-yellow-500'
-    },
-    low: {
-      background: 'bg-green-100 text-green-800',
-      border: 'border-green-300',
-      icon: 'text-green-500'
-    }
-  };
   
-
   return (
     <ul className="flex flex-col gap-3 px-3 py-2 items-center w-5/6 sm:4/5 md:w-3/4 lg:w-1/2 border-2 border-neutral-800 rounded-md justify-between">
       {tasks?.length > 0 ? tasks.map((task) => (

@@ -3,8 +3,10 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 type Task = {
   id: string;
   text: string;
-  priority: "High" | "Medium" | "Low";
+  priority: Priority;
 };
+
+export type Priority = "High" | "Medium" | "Low";
 
 type TasksState = {
   tasks: Task[];

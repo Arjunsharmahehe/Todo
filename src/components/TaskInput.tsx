@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useAppDispatch } from "@/lib/store";
 import { addTask } from "@/lib/tasksSlice";
+import { Priority } from "@/lib/tasksSlice";
 
 export default function TaskInput() {
   const dispatch = useAppDispatch();
@@ -24,7 +25,7 @@ export default function TaskInput() {
         value={text}
         onChange={(e) => setText(e.target.value)}
       />
-      <select className="pl-2" value={priority} onChange={(e) => setPriority(e.target.value as any)}>
+      <select className="pl-2" value={priority} onChange={(e) => setPriority(e.target.value as Priority)}>
         <option value="High">High</option>
         <option value="Medium">Medium</option>
         <option value="Low">Low</option>
