@@ -11,11 +11,11 @@ export default function Navbar(){
             {/* Authentication Buttons */}
             <div className="ml-4 flex gap-3 items-center md:ml-6">
                 <Link href="/login"
-                      className="flex items-center bg-neutral-800 hover:bg-neutral-600 hover:border-neutral-600 border-3 border-neutral-800 text-white font-bold py-1 px-4 rounded-md transition-colors duration-300 ease-in-out">
+                      className="flex items-center bg-blue-600 hover:bg-blue-700 border-3 border-blue-800 text-white font-bold py-1 px-4 rounded-md transition-colors duration-300 ease-in-out">
                     Login
                 </Link>
                 <Link href='/logout'
-                      className="flex items-center bg-neutral-950 hover:bg-neutral-900 border-3 border-neutral-800 text-white font-bold py-1 px-4 rounded-lg transition-colors duration-300 ease-in-out">
+                      className="flex items-center bg-neutral-950 hover:bg-neutral-900 border-3 border-blue-600 text-blue-600 font-bold py-1 px-4 rounded-lg transition-colors duration-300 ease-in-out">
                     Logout
                 </Link>
             </div>
