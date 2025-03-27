@@ -1,21 +1,28 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-const loadTasks = () => {
-    if (typeof window !== "undefined") {
-      const savedTasks = localStorage.getItem("tasks");
-      return savedTasks ? JSON.parse(savedTasks) : [];
-    }
-    return [];
-  };
 
+// Function to load the tasks form local storage
+const loadTasks = () => {
+  // Check if running in a browser environment  
+  if (typeof window !== "undefined") {
+    const savedTasks = localStorage.getItem("tasks");
+    // Parse the stored JSON or return an empty array if nothing is there
+    return savedTasks ? JSON.parse(savedTasks) : [];
+  }
+    return [];
+};
+
+// Structure of a single task object
 type Task = {
   id: string;
   text: string;
   priority: Priority;
 };
 
+// Possible tpyes of the priority key
 export type Priority = "High" | "Medium" | "Low";
 
+// Type: Array of all the tasks
 type TasksState = {
   tasks: Task[];
 };

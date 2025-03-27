@@ -3,7 +3,7 @@
 import { Provider } from "react-redux";
 import { store } from "@/lib/store";
 import "./globals.css";
-import AuthSync from "@/components/AuthSync";
+import AuthSync from "@/lib/AuthSync";
 import Navbar from "@/components/NavBar";
 
 export default function RootLayout({
