@@ -8,7 +8,7 @@ import { useEffect } from "react";
 import { fetchCatQuote } from "@/lib/quoteSlice";
 
 export default function Dashboard() {
-    const dispatch = useAppDispatch();
+  const dispatch = useAppDispatch();
   const user = useAppSelector((state) => state.auth.user);
   const { quote, loading } = useAppSelector((state) => state.quote);
   
