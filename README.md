@@ -37,4 +37,4 @@ npm run dev
 The site should be up on `localhost:3000` or your local network `192:168.X.XX:3000`
 
 ## Final thoughts
-It was a fun impromptu project to work on. I was a headache using Redux (why not use Zustand). It was pleasant creating the routes and the design. I tried my best to follow clean code practices. If something is not right, raise an issue. I am learning everyday.
+It was a fun impromptu project to work on. It was a headache using Redux (why not use Zustand). It was pleasant creating the routes and the design. I tried my best to follow clean code practices. If something is not right, raise an issue. I am learning everyday.
