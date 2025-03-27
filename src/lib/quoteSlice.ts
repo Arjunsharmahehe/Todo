@@ -8,16 +8,18 @@ export const fetchCatQuote = createAsyncThunk("quote/fetch", async () => {
   return data.fact;
 });
 
+// Struct for the state of quote
 interface QuoteState {
     quote: string | null;
     loading: boolean;
     error: string | null;
   }
 
+// Initial state of the quotes
 const initialState: QuoteState = {
     quote: null,
     loading: false,
-    error: null, // ✅ Define error as string | null
+    error: null,
   };
 
 const quoteSlice = createSlice({

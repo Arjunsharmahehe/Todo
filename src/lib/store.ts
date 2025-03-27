@@ -4,6 +4,8 @@ import tasksReducer from "./tasksSlice";
 import authReducer from "./authSlice";
 import quoteReducer from './quoteSlice'
 
+// Combines all the slice reducers into a single reducer
+
 export const store = configureStore({
   reducer: {
     tasks: tasksReducer,

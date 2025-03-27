@@ -26,9 +26,9 @@ export default function TaskInput() {
         onChange={(e) => setText(e.target.value)}
       />
       <select className="pl-2" value={priority} onChange={(e) => setPriority(e.target.value as Priority)}>
-        <option value="High">High</option>
-        <option value="Medium">Medium</option>
-        <option value="Low">Low</option>
+        <option className="bg-neutral-900 text-neutral-50" value="High">High</option>
+        <option className="bg-neutral-900 text-neutral-50" value="Medium">Medium</option>
+        <option className="bg-neutral-900 text-neutral-50" value="Low">Low</option>
       </select>
       <button className="border border-green-400 text-green-400 text-md font-semibold rounded-md px-4 py-1 hover:bg-green-950 hover:text-green-300" 
       onClick={handleAddTask}>Add Task</button>

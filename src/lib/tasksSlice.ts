@@ -27,14 +27,17 @@ type TasksState = {
   tasks: Task[];
 };
 
+// Define the initial state of tasks slice
 const initialState: TasksState = {
   tasks: loadTasks(),
 };
+
 
 const tasksSlice = createSlice({
   name: "tasks",
   initialState,
   reducers: {
+    // Reducer to add, delete, and set task priority
     addTask: (state, action: PayloadAction<Task>) => {
       state.tasks.push(action.payload);
       localStorage.setItem("tasks", JSON.stringify(state.tasks));
